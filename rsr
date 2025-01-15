@@ -21,8 +21,6 @@ local Highlight = loadstring(game:HttpGet("https://github.com/exxtremestuffs/Sim
 
 local SimpleSpy2 = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
-Background.Draggable = true
-Background.Active= true
 local LeftPanel = Instance.new("Frame")
 local LogList = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
