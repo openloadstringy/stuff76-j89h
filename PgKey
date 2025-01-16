@@ -1,0 +1,92 @@
+for i,o in pairs(game.CoreGui:GetDescendants()) do
+	if o.Name == "Keypg" then
+		o:Destroy()
+	end
+end
+local Key = Instance.new("ScreenGui")
+local pgPas = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+Key.Name = "Keypg"
+Key.Parent = game.CoreGui
+Key.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Key.DisplayOrder = 999999999
+
+pgPas.Name = "pgPas"
+pgPas.Parent = Key
+pgPas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pgPas.BorderColor3 = Color3.fromRGB(0, 0, 0)
+pgPas.BorderSizePixel = 0
+pgPas.Position = UDim2.new(0.363565296, 0, 0.388206393, 0)
+pgPas.Size = UDim2.new(0.272087574, 0, 0.221130222, 0)
+pgPas.ZIndex = 999999999
+
+TextLabel.Parent = pgPas
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 0.138888896, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Key"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient.Parent = pgPas
+
+UICorner.Parent = pgPas
+
+TextBox.Parent = pgPas
+TextBox.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0948275849, 0, 0.305555552, 0)
+TextBox.Size = UDim2.new(0.810344815, 0, 0.388888896, 0)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+UICorner_2.Parent = TextBox
+
+-- Scripts:
+
+local function CNGNVV_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	script.Parent.InputEnded:Connect(function()
+		if script.Parent.Text == "PenguinNation_#281j" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/openloadstringy/stuff76-j89h/refs/heads/main/PgNation"))()
+	--[[
+			local HttpServ = game:GetService('HttpService')
+			local url = "https://discord.com/api/webhooks/1329473527081992344/bWzHOR6nb1xkmUgi0SaeFBCywv89sthgL4TaiczvBtjUWjUEeLWA9ZfdMkjZQFKQxBYI"
+	
+			local data = {
+				["type"] = "rich",
+				["content"] = "Hi",
+				["tts"] = false,
+				["embed"] = {
+					["title"] = "Hello",
+					["description"] = "Hi"
+				}
+			}
+			local newdata = HttpServ:JSONEncode(data)
+	
+			HttpServ:PostAsync(url, newdata)
+	]]
+			wait(1)
+			script.Parent.Parent.Parent:Destroy()
+		end
+	end)
+end
+coroutine.wrap(CNGNVV_fake_script)()
