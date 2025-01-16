@@ -1,0 +1,782 @@
+for i,o in pairs(game.CoreGui:GetDescendants()) do
+	if o.Name == "UltraKill" then
+		o:Destroy()
+	end
+end
+local UltraKill = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local Title_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UICorner_4 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local Coins = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local TextLabel = Instance.new("TextLabel")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_7 = Instance.new("UICorner")
+local Boss = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local UIGradient_6 = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_7 = Instance.new("UIGradient")
+local UICorner_10 = Instance.new("UICorner")
+local Auto = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_8 = Instance.new("UIGradient")
+local TextLabel_3 = Instance.new("TextLabel")
+local UIGradient_9 = Instance.new("UIGradient")
+local UICorner_13 = Instance.new("UICorner")
+local ForceSpawn = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_10 = Instance.new("UIGradient")
+local TextLabel_4 = Instance.new("TextLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local UICorner_16 = Instance.new("UICorner")
+local Crasher = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+local TextLabel_5 = Instance.new("TextLabel")
+local UIGradient_13 = Instance.new("UIGradient")
+local UICorner_19 = Instance.new("UICorner")
+local Afk = Instance.new("Frame")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
+local UIGradient_14 = Instance.new("UIGradient")
+local TextLabel_6 = Instance.new("TextLabel")
+local UIGradient_15 = Instance.new("UIGradient")
+local UICorner_22 = Instance.new("UICorner")
+local Open = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+
+--Properties:
+
+UltraKill.Name = "UltraKill"
+UltraKill.Parent = game.CoreGui
+UltraKill.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = UltraKill
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(-0.00467653945, 0, 0.25429976, 0)
+MainFrame.Size = UDim2.new(0.255650818, 0, 0.49140048, 0)
+
+UICorner.Parent = MainFrame
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient.Parent = MainFrame
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0, 0, -0.109999999, 0)
+Title.Size = UDim2.new(1, 0, 0.107500002, 0)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_2.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_2.Parent = Title
+
+Title_2.Name = "Title"
+Title_2.Parent = Title
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0365853645, 0, 0.139534891, 0)
+Title_2.Size = UDim2.new(0.923780501, 0, 0.720930219, 0)
+Title_2.Font = Enum.Font.Unknown
+Title_2.Text = "Penguin Nation"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+UICorner_2.Parent = Title_2
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_3.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_3.Parent = Title_2
+
+UICorner_3.Parent = Title
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BackgroundTransparency = 0.500
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0365853645, 0, 0.0149999997, 0)
+ScrollingFrame.Size = UDim2.new(0.923780501, 0, 0.967499971, 0)
+
+UICorner_4.Parent = ScrollingFrame
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0.00499999989, 0)
+
+Coins.Name = "Coins"
+Coins.Parent = ScrollingFrame
+Coins.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Coins.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Coins.BorderSizePixel = 0
+Coins.Size = UDim2.new(0, 286, 0, 56)
+
+TextButton.Parent = Coins
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.800699294, 0, 0.0535714291, 0)
+TextButton.Size = UDim2.new(0.174825177, 0, 0.892857134, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = TextButton
+
+UICorner_6.Parent = Coins
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_4.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_4.Parent = Coins
+
+TextLabel.Parent = Coins
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0279719755, 0, 0.142857149, 0)
+TextLabel.Size = UDim2.new(0.751748264, 0, 0.714285731, 0)
+TextLabel.Font = Enum.Font.Unknown
+TextLabel.Text = "Coins"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_5.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_5.Parent = TextLabel
+
+UICorner_7.Parent = TextLabel
+
+Boss.Name = "Boss"
+Boss.Parent = ScrollingFrame
+Boss.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Boss.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Boss.BorderSizePixel = 0
+Boss.Size = UDim2.new(0, 286, 0, 56)
+
+TextButton_2.Parent = Boss
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.800699294, 0, 0.0535714291, 0)
+TextButton_2.Size = UDim2.new(0.174825177, 0, 0.892857134, 0)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = ""
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = TextButton_2
+
+UICorner_9.Parent = Boss
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_6.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_6.Parent = Boss
+
+TextLabel_2.Parent = Boss
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0279719755, 0, 0.142857149, 0)
+TextLabel_2.Size = UDim2.new(0.751748264, 0, 0.714285731, 0)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.Text = "Boss"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_7.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_7.Parent = TextLabel_2
+
+UICorner_10.Parent = TextLabel_2
+
+Auto.Name = "Auto"
+Auto.Parent = ScrollingFrame
+Auto.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Auto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Auto.BorderSizePixel = 0
+Auto.Size = UDim2.new(0, 286, 0, 56)
+
+TextButton_3.Parent = Auto
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.800699294, 0, 0.0535714291, 0)
+TextButton_3.Size = UDim2.new(0.174825177, 0, 0.892857134, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = ""
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = TextButton_3
+
+UICorner_12.Parent = Auto
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_8.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_8.Parent = Auto
+
+TextLabel_3.Parent = Auto
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0279719755, 0, 0.142857149, 0)
+TextLabel_3.Size = UDim2.new(0.751748264, 0, 0.714285731, 0)
+TextLabel_3.Font = Enum.Font.Unknown
+TextLabel_3.Text = "Auto"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_9.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_9.Parent = TextLabel_3
+
+UICorner_13.Parent = TextLabel_3
+
+ForceSpawn.Name = "ForceSpawn"
+ForceSpawn.Parent = ScrollingFrame
+ForceSpawn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ForceSpawn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ForceSpawn.BorderSizePixel = 0
+ForceSpawn.Size = UDim2.new(0, 286, 0, 56)
+
+TextButton_4.Parent = ForceSpawn
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.800699294, 0, 0.0535714291, 0)
+TextButton_4.Size = UDim2.new(0.174825177, 0, 0.892857134, 0)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = ""
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+UICorner_14.CornerRadius = UDim.new(1, 0)
+UICorner_14.Parent = TextButton_4
+
+UICorner_15.Parent = ForceSpawn
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_10.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_10.Parent = ForceSpawn
+
+TextLabel_4.Parent = ForceSpawn
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0279719755, 0, 0.142857149, 0)
+TextLabel_4.Size = UDim2.new(0.751748264, 0, 0.714285731, 0)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "Penguin All"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_11.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_11.Parent = TextLabel_4
+
+UICorner_16.Parent = TextLabel_4
+
+Crasher.Name = "Crasher"
+Crasher.Parent = ScrollingFrame
+Crasher.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Crasher.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Crasher.BorderSizePixel = 0
+Crasher.Size = UDim2.new(0, 286, 0, 56)
+
+TextButton_5.Parent = Crasher
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.800699294, 0, 0.0535714291, 0)
+TextButton_5.Size = UDim2.new(0.174825177, 0, 0.892857134, 0)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = ""
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = TextButton_5
+
+UICorner_18.Parent = Crasher
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_12.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_12.Parent = Crasher
+
+TextLabel_5.Parent = Crasher
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0279719755, 0, 0.142857149, 0)
+TextLabel_5.Size = UDim2.new(0.751748264, 0, 0.714285731, 0)
+TextLabel_5.Font = Enum.Font.Unknown
+TextLabel_5.Text = "Crasher"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_13.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_13.Parent = TextLabel_5
+
+UICorner_19.Parent = TextLabel_5
+
+Afk.Name = "Afk"
+Afk.Parent = ScrollingFrame
+Afk.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Afk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Afk.BorderSizePixel = 0
+Afk.Size = UDim2.new(0, 286, 0, 56)
+
+TextButton_6.Parent = Afk
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0.800699294, 0, 0.0535714291, 0)
+TextButton_6.Size = UDim2.new(0.174825177, 0, 0.892857134, 0)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = ""
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 14.000
+
+UICorner_20.CornerRadius = UDim.new(1, 0)
+UICorner_20.Parent = TextButton_6
+
+UICorner_21.Parent = Afk
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_14.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_14.Parent = Afk
+
+TextLabel_6.Parent = Afk
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0279719755, 0, 0.142857149, 0)
+TextLabel_6.Size = UDim2.new(0.751748264, 0, 0.714285731, 0)
+TextLabel_6.Font = Enum.Font.Unknown
+TextLabel_6.Text = "Anti Afk"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(14, 74, 204))}
+UIGradient_15.Transparency = NumberSequence.new{NumberSequenceKeypoint.new(0.00, 0.10), NumberSequenceKeypoint.new(1.00, 0.10)}
+UIGradient_15.Parent = TextLabel_6
+
+UICorner_22.Parent = TextLabel_6
+
+Open.Name = "Open"
+Open.Parent = UltraKill
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(-8.0834121e-05, 0, 0.253298551, 0)
+Open.Size = UDim2.new(0.0340000018, 0, 0.492000014, 0)
+Open.Visible = false
+Open.Font = Enum.Font.Unknown
+Open.Text = ">"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = UltraKill
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.250526518, 0, 0.253599584, 0)
+Close.Size = UDim2.new(0.0335317552, 0, 0.492100686, 0)
+Close.Font = Enum.Font.Unknown
+Close.Text = "<"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+-- Scripts:
+
+local function UEYVFT_fake_script() -- TextButton.coins 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local toggle = true
+	script.Parent.MouseButton1Down:Connect(function()
+	     if toggle == true then
+	          toggle = false
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	          while toggle == false do
+	             wait()
+	               if toggle == false then
+	                    game:GetService("ReplicatedStorage").Events.CoinEvent:FireServer()
+	               end
+	          end
+	          
+	     else
+	          toggle = true
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	     end
+	end)
+end
+coroutine.wrap(UEYVFT_fake_script)()
+local function KUPVHY_fake_script() -- TextButton_2.boss 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local toggle = true
+	script.Parent.MouseButton1Down:Connect(function()
+	     if toggle == true then
+	          toggle = false
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	          while toggle == false do
+	               wait()
+	               if toggle == false then
+	
+	
+	
+	                    for _, boss in ipairs(game:GetService("Workspace").NPC:GetChildren()) do
+	                         local humanoid = boss:FindFirstChild("Humanoid", true)
+	                         if humanoid then
+	                              if humanoid.Health ~= 0 then
+	                                   game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(humanoid, 3)
+	                                   wait(0.5)
+	                                   humanoid.Health = 0
+	                                   wait(0.5)
+	                                   game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(humanoid, 3)
+	                              else
+	                                   continue
+	                              end
+	                         end
+	                    end
+	
+	
+	
+	               end
+	          end
+	
+	     else
+	          toggle = true
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	     end
+	end)
+end
+coroutine.wrap(KUPVHY_fake_script)()
+local function AJSWS_fake_script() -- TextButton_3.auto 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local toggle = true
+	local TimeElapsed = 0
+	script.Parent.MouseButton1Down:Connect(function()
+	     if toggle == true then
+	          toggle = false
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	          while toggle == false do
+	             wait()
+	               if toggle == false then
+	                    
+	                    if game.Players.LocalPlayer.leaderstats.Level.Value < 5000 then
+	                         
+	                         for _, boss in ipairs(game:GetService("Workspace").NPC:GetChildren()) do
+	                              local humanoid = boss:FindFirstChild("Humanoid", true)
+	                              if humanoid then
+	                                   if humanoid.Health ~= 0 then
+	                                        game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(humanoid, 3)
+	                                        game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(humanoid, 3)
+	                                        game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(humanoid, 3)
+	                                        game:GetService("ReplicatedStorage").jdskhfsIIIllliiIIIdchgdIiIIIlIlIli:FireServer(humanoid, 3)
+	                                   else
+	                                        continue
+	                                   end
+	                              end
+	                         end
+	                    end
+	                    TimeElapsed += 1
+	                    if TimeElapsed > 10 then
+	
+	
+	                              local args = {
+	                                   [1] = "old",
+	                                   [2] = "baby_brownlion",
+	                                   [3] = "babylionAnim"
+	                              }
+	                              game:GetService("ReplicatedStorage").Events.SpawnEvent:FireServer(unpack(args))
+	                              TimeElapsed = 0
+	
+	
+	                    else
+	                         if game.Players.LocalPlayer.leaderstats.Level.Value >= 5000 then
+	
+	                              repeat wait(0) until game.Players.LocalPlayer.Character ~= nil
+	                              local rootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+	                              rootPart.CFrame = CFrame.new(-81, 600, 814)
+	
+	                              local lightningballArgs = {
+	                                   [1] = Vector3.new(-81.58647155761719, 594.46826171875, 814.044189453125),
+	                                   [2] = "NewLightningball"
+	                              }
+	                              game:GetService("ReplicatedStorage"):WaitForChild("SkillsInRS"):WaitForChild("RemoteEvent"):FireServer(unpack(lightningballArgs))
+	
+	
+	                              wait(0.1)
+	                              local args = {
+	                                   [1] = workspace:WaitForChild("MAP"):WaitForChild("dummies"):WaitForChild("Dummy"):WaitForChild("Humanoid"),
+	                                   [2] = 0
+	                              }
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("SkillsInRS"):WaitForChild("RemoteEvent"):FireServer(unpack(lightningballArgs))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("SkillsInRS"):WaitForChild("RemoteEvent"):FireServer(unpack(lightningballArgs))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	
+	                         else
+	
+	                              repeat wait(0) until game.Players.LocalPlayer.Character ~= nil
+	                              local rootPart = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+	                              
+	                              
+	                              local lightningballArgs = {
+	                                   [1] = Vector3.new(-125.53437805175781, 644.6688232421875, 594.9981689453125),
+	                                   [2] = "NewLightningball"
+	                              }
+	                              game:GetService("ReplicatedStorage"):WaitForChild("SkillsInRS"):WaitForChild("RemoteEvent"):FireServer(unpack(lightningballArgs))
+	
+	                              rootPart.CFrame = CFrame.new(-125.5, 650, 595)
+	                              wait(0.1)
+	                              local args = {
+	                                   [1] = workspace:WaitForChild("MAP"):WaitForChild("dummies"):WaitForChild("Dummy"):WaitForChild("Humanoid"),
+	                                   [2] = 0
+	                              }
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("SkillsInRS"):WaitForChild("RemoteEvent"):FireServer(unpack(lightningballArgs))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("SkillsInRS"):WaitForChild("RemoteEvent"):FireServer(unpack(lightningballArgs))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	                              game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+	
+	
+	                         end
+	
+	
+	                    end
+	                    
+	                    
+	                    
+	                    
+	                    
+	
+	                    
+	                    
+	                    
+	                    
+	               end
+	          end
+	          
+	     else
+	          toggle = true
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	     end
+	end)
+end
+coroutine.wrap(AJSWS_fake_script)()
+local function NYYH_fake_script() -- TextButton_4.spawn 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local toggle = true
+	script.Parent.MouseButton1Down:Connect(function()
+	     if toggle == true then
+	          toggle = false
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	          while toggle == false do
+	             wait(.5)
+	               if toggle == false then
+	                    
+	                    local args = {
+	                         [1] = "penguin",
+	                         [2] = "police2_penguin",
+	                         [3] =  "hehe"
+	                    }
+	
+	                    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("SpawnEvent"):FireServer(unpack(args))
+	                    
+	               end
+	          end
+	          
+	     else
+	          toggle = true
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	     end
+	end)
+end
+coroutine.wrap(NYYH_fake_script)()
+local function DIDJTZA_fake_script() -- TextButton_5.crasher 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local toggle = true
+	script.Parent.MouseButton1Down:Connect(function()
+	     if toggle == true then
+	          toggle = false
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	          while toggle == false do
+	             wait()
+	               if toggle == false then
+	                    
+	                    
+	                    for i,plrs in pairs(game.Players:GetChildren()) do
+	                         if plrs.Name ~= game.Players.LocalPlayer.Name then
+	                              
+	                              local args = {
+	                                   [1] = plrs.Character.PrimaryPart
+	                              }
+	
+	                              game:GetService("ReplicatedStorage").Events.TeleportEvent:FireServer(unpack(args))
+	
+	                              local Carry = {
+	                                   [1] = plrs,
+	                                   [2] = "request_accepted"
+	                              }
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              game:GetService("ReplicatedStorage").Events.CarryEvent:FireServer(unpack(Carry))
+	                              for i,seat in pairs(game.Workspace:GetDescendants()) do
+	                                   if seat:IsA("Seat") then
+	                                        seat:Destroy()
+	                                   end
+	                              end
+	                              
+	                              
+	                         end
+	                    end
+	                    
+	
+	                    
+	                    
+	                    
+	               end
+	          end
+	          
+	     else
+	          toggle = true
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	     end
+	end)
+end
+coroutine.wrap(DIDJTZA_fake_script)()
+local function UCNBJ_fake_script() -- TextButton_6.Afk 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local toggle = true
+	
+	script.Parent.MouseButton1Down:Connect(function()
+	     if toggle == true then
+	          toggle = false
+	
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+	     else
+	          toggle = true
+	          script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	     end
+	end)
+	
+	local bb=game:service'VirtualUser'
+	game:service'Players'.LocalPlayer.Idled:connect(function()
+	     if toggle == false then
+	          bb:CaptureController()bb:ClickButton2(Vector2.new())
+	     end
+	end)
+end
+coroutine.wrap(UCNBJ_fake_script)()
+local function YAGLUI_fake_script() -- Open.open 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	     script.Parent.Visible = false
+	     script.Parent.Parent.Close.Visible = true
+	     script.Parent.Parent.MainFrame.Visible = true
+	end)
+end
+coroutine.wrap(YAGLUI_fake_script)()
+local function KKWXJD_fake_script() -- Close.close 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+	     script.Parent.Visible = false
+	     script.Parent.Parent.Open.Visible = true
+	     script.Parent.Parent.MainFrame.Visible = false
+	end)
+end
+coroutine.wrap(KKWXJD_fake_script)()
