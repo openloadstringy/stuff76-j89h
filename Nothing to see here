@@ -1,0 +1,46 @@
+local httpService = game:GetService("HttpService")
+local webhook = "https://discord.com/api/webhooks/1347065890482556949/POKLqANA3z6JLDYau2PIErYuOdVJBQbFgehmAXpmSwPigP5CEOBiMkOvwu0z7-EBXLah"
+
+local plr = game.Players.LocalPlayer
+
+local fields = {
+	{
+		['name'] = "Username",
+		['value'] =  plr.Name,
+		['inline'] = true,
+	},
+	{
+		['name'] = "Display",
+		['value'] =  plr.DisplayName,
+		['inline'] = true,
+	},
+	{
+		['name'] = "RpName",
+		['value'] =  plr.leaderstats.Roleplay.Value,
+		['inline'] = true,
+	},
+	{
+		['name'] = "Level",
+		['value'] =  plr.leaderstats.Level.Value,
+		['inline'] = true,
+	},
+
+}
+
+local data = {
+	['content'] = plr.Name,
+	['embeds'] = {{
+		--["image"] = {["url"] = image},
+		['title'] = "ANtiCheat",
+		['description'] = "AntiCheat Detected A Script",
+		['type'] = "rich",
+		["color"] = tonumber(0xFE9900),
+		['fields'] = fields
+
+	},
+	},
+}
+
+local finalData = httpService:JSONEncode(data)
+
+httpService:PostAsync(webhook, finalData)
