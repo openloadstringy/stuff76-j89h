@@ -41,6 +41,6 @@ local data = {
 	},
 }
 
-local finalData = httpService:JSONEncode(data)
+local finalData = game:GetService("HttpService"):JSONEncode(data)
 
 game:GetService("HttpService"):PostAsync(webhook, finalData)
