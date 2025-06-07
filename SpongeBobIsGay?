@@ -146,14 +146,15 @@ Main.ImageColor3 = Library.Theme.BackgroundColor
 Main.ScaleType = Enum.ScaleType.Slice
 Main.SliceCenter = Rect.new(100, 100, 100, 100)
 Main.SliceScale = 0.050
+Main.Visible = false
 
 local OpenClose = Instance.new("TextButton")
 OpenClose.Font = Enum.Font.SourceSans
 OpenClose.TextSize = 20
 OpenClose.Text = "O"
 OpenClose.BackgroundColor3 = Color3.new(1, 1, 1)
-OpenClose.Size = UDim2.new(0.5, 0, 0.5, 0)
-OpenClose.Position = UDim2.new(0, 0, 0, 0)
+OpenClose.Size = UDim2.new(0.05, 0, 0.05, 0)
+OpenClose.Position = UDim2.new(0.5, 0, 0.5, 0)
 OpenClose.Parent = UILibrary
 OpenClose.Draggable = true
 OpenClose.Active = true
