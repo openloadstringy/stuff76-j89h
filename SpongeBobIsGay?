@@ -1,17 +1,17 @@
-for i,uis in pairs(game.CoreGui:GetChildren()) do
-	if uis.Name == "WolfSnip" then
-	 uis:Destroy()
-	else
-	 continue
-	end
-end
-
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local HttpService = game:GetService("HttpService")
 local UserInputService = game:GetService("UserInputService")
 local ContentProvider = game:GetService("ContentProvider")
 local CoreGui = game:GetService("CoreGui")
+
+for i,uis in pairs(CoreGui:GetChildren()) do
+	if uis.Name == "WolfSnip" then
+	 uis:Destroy()
+	else
+	 continue
+	end
+end
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Mouse = LocalPlayer:GetMouse()
