@@ -134,6 +134,7 @@ UILibrary.Parent = CoreGui
 UILibrary.DisplayOrder = 1
 UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
+local UICornerBackground = Instance.new("UICorner")
 Main.Name = "Main"
 Main.Parent = UILibrary
 Main.BackgroundColor3 = Library.Theme.BackgroundColor
@@ -141,26 +142,12 @@ Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.590086579, 0, 0.563882053, 0)
 Main.Size = UDim2.new(0, 450, 0, 0)
 Main.ZIndex = 4
-Main.Image = "rbxassetid://3570695787"
+Main.Image = "rbxassetid://12853461088"
 Main.ImageColor3 = Library.Theme.BackgroundColor
-Main.ScaleType = Enum.ScaleType.Slice
-Main.SliceCenter = Rect.new(100, 100, 100, 100)
-Main.SliceScale = 0.050
+UICornerBackground.Parent = Main
+UICornerBackground.CornerRadius = UDim.new(0.15, 0)
 Main.Visible = false
 
-local UICornerBackground = Instance.new("UICorner")
-local ImageBackGround = Instance.new("ImageLabel")
-ImageBackGround.Name = "Main"
-ImageBackGround.Parent = Main
-ImageBackGround.BackgroundColor3 = Library.Theme.BackgroundColor
-ImageBackGround.BackgroundTransparency = 1.000
-ImageBackGround.Position = UDim2.new(0, 0, 0, 0)
-ImageBackGround.Size = UDim2.new(1, 0, 1, 0)
-ImageBackGround.ZIndex = 3
-ImageBackGround.Image = "rbxassetid://12853461088"
-ImageBackGround.ImageColor3 = Color3.fromRGB(255, 255, 255)
-UICornerBackground.Parent = ImageBackGround
-UICornerBackground.CornerRadius = UDim.new(0.15, 0)
 
 local UICornerOpen = Instance.new("UICorner")
 local UIStroke = Instance.new("UIStroke")
