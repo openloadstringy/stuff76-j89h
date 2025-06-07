@@ -132,7 +132,7 @@ local TabButtonLayout = Instance.new("UIListLayout")
 UILibrary.Name =  "WolfSnip" --HttpService:GenerateGUID(false)
 UILibrary.Parent = CoreGui
 UILibrary.DisplayOrder = 1
-UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 Main.Name = "Main"
 Main.Parent = UILibrary
@@ -140,7 +140,7 @@ Main.BackgroundColor3 = Library.Theme.BackgroundColor
 Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.590086579, 0, 0.563882053, 0)
 Main.Size = UDim2.new(0, 450, 0, 0)
-Main.ZIndex = 2
+Main.ZIndex = 4
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = Library.Theme.BackgroundColor
 Main.ScaleType = Enum.ScaleType.Slice
@@ -160,7 +160,7 @@ ImageBackGround.ZIndex = 3
 ImageBackGround.Image = "rbxassetid://12853461088"
 ImageBackGround.ImageColor3 = Color3.fromRGB(255, 255, 255)
 UICornerBackground.Parent = ImageBackGround
-UICornerBackground.CornerRadius = UDim.new(0.2, 0)
+UICornerBackground.CornerRadius = UDim.new(0.15, 0)
 
 local UICornerOpen = Instance.new("UICorner")
 local UIStroke = Instance.new("UIStroke")
@@ -334,14 +334,14 @@ function Library:CreateTab(name)
 	NameTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NameTab.BackgroundTransparency = 1.000
 	NameTab.Size = UDim2.new(1, 0, 1, 0)
-	NameTab.ZIndex = 2
+	NameTab.ZIndex = 4
 
 	NameTabButton.Name = (name .. "TabButton")
 	NameTabButton.Parent = TabButtons
 	NameTabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NameTabButton.BackgroundTransparency = 1.000
 	NameTabButton.Size = UDim2.new(0, 84, 0, 25)
-	NameTabButton.ZIndex = 2
+	NameTabButton.ZIndex = 4
 	NameTabButton.Image = "rbxassetid://3570695787"
 	NameTabButton.ImageColor3 = Library.Theme.MainColor
 	NameTabButton.ScaleType = Enum.ScaleType.Slice
@@ -353,7 +353,7 @@ function Library:CreateTab(name)
 	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Title.BackgroundTransparency = 1.000
 	Title.Size = UDim2.new(1, 0, 1, 0)
-	Title.ZIndex = 2
+	Title.ZIndex = 4
 	Title.Font = Library.Theme.TextFont
 	Title.Text =  name
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255)
