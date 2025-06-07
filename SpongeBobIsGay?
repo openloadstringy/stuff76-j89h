@@ -1,6 +1,8 @@
 for i,uis in pairs(game.CoreGui:GetChildren()) do
 	if uis.Name == "WolfSnip" then
-	uis:Destroy()
+	 uis:Destroy()
+	else
+	 continue
 	end
 end
 
