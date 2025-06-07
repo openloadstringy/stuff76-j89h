@@ -132,7 +132,7 @@ local TabButtonLayout = Instance.new("UIListLayout")
 UILibrary.Name =  "WolfSnip" --HttpService:GenerateGUID(false)
 UILibrary.Parent = CoreGui
 UILibrary.DisplayOrder = 1
-UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Global
+UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = UILibrary
@@ -158,9 +158,6 @@ ImageBackGround.Size = UDim2.new(1, 0, 1, 0)
 ImageBackGround.ZIndex = 3
 ImageBackGround.Image = "rbxassetid://12853461088"
 ImageBackGround.ImageColor3 = Color3.fromRGB(255, 255, 255)
-ImageBackGround.ScaleType = Enum.ScaleType.Slice
-ImageBackGround.SliceCenter = Rect.new(100, 100, 100, 100)
-ImageBackGround.SliceScale = 0.050
 
 local UICornerOpen = Instance.new("UICorner")
 local UIStroke = Instance.new("UIStroke")
