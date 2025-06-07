@@ -1,5 +1,7 @@
-if game.CoreGui:FindFirstChild("WolfSnip") then
-game.CoreGui:FindFirstChild("WolfSnip"):Destroy()
+for i,uis in pairs(game.CoreGui:GetChildren()) do
+	if uis.Name == "WolfSnip" then
+	uis:Destroy()
+	end
 end
 
 local TweenService = game:GetService("TweenService")
