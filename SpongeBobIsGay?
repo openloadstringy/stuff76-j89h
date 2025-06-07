@@ -148,6 +148,7 @@ Main.SliceCenter = Rect.new(100, 100, 100, 100)
 Main.SliceScale = 0.050
 Main.Visible = false
 
+local UICornerBackground = Instance.new("UICorner")
 local ImageBackGround = Instance.new("ImageLabel")
 ImageBackGround.Name = "Main"
 ImageBackGround.Parent = Main
@@ -158,6 +159,8 @@ ImageBackGround.Size = UDim2.new(1, 0, 1, 0)
 ImageBackGround.ZIndex = 3
 ImageBackGround.Image = "rbxassetid://12853461088"
 ImageBackGround.ImageColor3 = Color3.fromRGB(255, 255, 255)
+UICornerBackground.Parent = ImageBackGround
+UICornerBackground.CornerRadius = UDim.new(0.2, 0)
 
 local UICornerOpen = Instance.new("UICorner")
 local UIStroke = Instance.new("UIStroke")
